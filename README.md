@@ -160,11 +160,19 @@ if __name__ == '__main__':
 
 **Шаг 3.** Заполните файл в соответствии с требованиями Ansible так, чтобы он выполнял основную задачу: module должен создавать текстовый файл на удалённом хосте по пути, определённом в параметре `path`, с содержимым, определённым в параметре `content`.
 
-**Шаг 4.** Проверьте module на исполняемость локально.
+> **Шаг 4.** Проверьте module на исполняемость локально.
+
+<img src = "img/task4.png" width = 100%>
 
 **Шаг 5.** Напишите single task playbook и используйте module в нём.
 
-**Шаг 6.** Проверьте через playbook на идемпотентность.
+> **Шаг 6.** Проверьте через playbook на идемпотентность.
+
+<img src = "img/task6-1.png" width = 100%>
+
+Повторный запуск: изменений нет
+
+<img src = "img/task6-2.png" width = 100%>
 
 **Шаг 7.** Выйдите из виртуального окружения.
 
@@ -182,11 +190,20 @@ if __name__ == '__main__':
 
 **Шаг 14.** Создайте ещё одну директорию любого наименования, перенесите туда single task playbook и архив c collection.
 
-**Шаг 15.** Установите collection из локального архива: `ansible-galaxy collection install <archivename>.tar.gz`.
+> **Шаг 15.** Установите collection из локального архива: `ansible-galaxy collection install <archivename>.tar.gz`.
 
-**Шаг 16.** Запустите playbook, убедитесь, что он работает.
+<img src = "img/task15.png" width = 100%>
 
-**Шаг 17.** В ответ необходимо прислать ссылки на collection и tar.gz архив, а также скриншоты выполнения пунктов 4, 6, 15 и 16.
+> **Шаг 16.** Запустите playbook, убедитесь, что он работает.
+
+<img src = "img/task16.png" width = 100%>
+
+> **Шаг 17.** В ответ необходимо прислать ссылки на collection и tar.gz архив, а также скриншоты выполнения пунктов 4, 6, 15 и 16.
+
+https://github.com/WilderWein123/08-ansible-06-module-my_own_collection
+
+https://github.com/WilderWein123/08-ansible-06-module-my_own_collection/blob/main/my_own_namespace.tar.gz
+
 
 ## Необязательная часть
 
